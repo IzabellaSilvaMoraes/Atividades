@@ -1,0 +1,6 @@
+try {
+    $contas = Get-LocalUser
+} catch {
+    Write-Error "Erro ao recuperar as contas de usuário locais: $_"
+    exit
+}
